@@ -133,12 +133,18 @@ br.sp { display: none; }
   font-size: clamp(.86rem, 1.25vw, .98rem); line-height: 2; color: var(--text-2);
   text-shadow: 0 1px 8px rgba(0, 0, 0, .9);
 }
-.hero-side { flex: none; padding-top: 6px; text-shadow: 0 1px 10px rgba(0, 0, 0, .9); }
-.hero-motto { margin: 0; font-size: clamp(1rem, 1.6vw, 1.25rem); line-height: 1.7; letter-spacing: .1em; }
-.hero-rule { display: block; width: 40px; height: 2px; margin: 20px 0 22px; background: var(--accent); box-shadow: var(--glow); }
+.hero-side {
+  flex: none; align-self: center;
+  /* ロゴと本文のあいだ（地球のふちの右）に、4語を縦に置く */
+  margin-top: clamp(-40px, -2vw, -10px);
+  padding-right: clamp(0px, 1vw, 12px);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, .9);
+}
+.hero-rule { display: block; width: 40px; height: 2px; margin: 0 0 20px; background: var(--accent); box-shadow: var(--glow); }
 .hero-words {
   list-style: none; margin: 0; padding: 0;
-  font-family: var(--font-en); font-size: .82rem; letter-spacing: .26em; line-height: 2; color: var(--text-2);
+  font-family: var(--font-en); font-weight: 400;
+  font-size: clamp(.82rem, 1.05vw, .95rem); letter-spacing: .34em; line-height: 2.3; color: #d6e0ee;
 }
 
 @media (max-width: 900px) {
@@ -151,10 +157,19 @@ br.sp { display: none; }
     opacity: .9;
   }
   .hero-inner { flex-direction: column; padding-top: clamp(28px, 18vw, 120px); }
-  .hero-side { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 18px; padding-top: 0; }
-  .hero-motto br { display: none; }
-  .hero-rule { width: 24px; margin: 0; }
-  .hero-words { display: flex; flex-wrap: wrap; gap: 0 14px; font-size: .72rem; }
+  .hero-side { align-self: stretch; display: flex; align-items: center; gap: 14px; margin-top: 4px; padding-right: 0; }
+  .hero-rule { flex: none; width: 24px; margin: 0; }
+  .hero-words { display: flex; flex-wrap: wrap; gap: 0 14px; font-size: .74rem; letter-spacing: .22em; line-height: 2; }
+}
+@media (max-width: 520px) {
+  /* 地球のふちと朝日が右上に来るように */
+  .hero-art { height: 78vw; background-position: 62% 30%; }
+  .hero-inner { padding-top: 34vw; gap: 18px; }
+  .hero-logo { font-size: clamp(2.5rem, 13vw, 3.4rem); }
+  .hero-kana { padding-left: 1.9em; letter-spacing: .42em; font-size: .95rem; }
+  .hero-lead { font-size: clamp(1.25rem, 6vw, 1.5rem); line-height: 1.6; letter-spacing: .08em; }
+  .hero-body { font-size: .88rem; line-height: 1.95; }
+  .hero-words { gap: 0 12px; font-size: .7rem; letter-spacing: .18em; }
 }
 
 /* ===== 共通：セクション ===== */
@@ -237,6 +252,7 @@ br.sp { display: none; }
 .mp-body { margin: 12px 0 0; font-size: .86rem; line-height: 1.85; letter-spacing: .02em; color: var(--text-2); }
 .mp-actions { display: flex; align-items: center; gap: 18px 32px; flex-wrap: wrap; margin-top: 18px; }
 .btn-glow {
+  -webkit-tap-highlight-color: transparent; touch-action: manipulation;
   display: inline-flex; align-items: center; gap: 10px;
   padding: 12px 34px;
   border-radius: 99px;
@@ -269,7 +285,7 @@ br.sp { display: none; }
   .mp-art {
     min-height: 0; aspect-ratio: 715 / 389; border: 1px solid var(--line); border-bottom: 0; border-radius: var(--radius) var(--radius) 0 0; }
   .mp-text { border: 1px solid var(--line); border-top: 0; border-radius: 0 0 var(--radius) var(--radius); }
-  .mp-play { width: 54px; height: 54px; margin: -27px 0 0 -27px; }
+  .mp-play { width: 60px; height: 60px; margin: -30px 0 0 -30px; }
   .mp-play-label { font-size: .8rem; }
 }
 
@@ -305,6 +321,12 @@ br.sp { display: none; }
   background: rgba(8, 14, 28, .78);
   font-size: .76rem; font-weight: 500; letter-spacing: .1em;
 }
+@media (max-width: 520px) {
+  .mp-actions { flex-direction: column; align-items: stretch; gap: 12px; }
+  .btn-glow { justify-content: center; min-height: 52px; padding: 12px 20px; }
+  .link-more { align-self: flex-start; padding: 10px 64px 10px 0; }
+  .mp-text { padding: 22px 18px 24px; }
+}
 @media (max-width: 1000px) {
   .card { aspect-ratio: auto; min-height: 180px; }
 }
@@ -314,6 +336,9 @@ br.sp { display: none; }
 }
 @media (max-width: 420px) {
   .card { aspect-ratio: auto; min-height: 168px; }
+  /* 狭い画面はバッジを右上へ＝説明文を広く使う */
+  .card p { padding-right: 0; }
+  .badge { top: 16px; bottom: auto; right: 16px; }
 }
 
 /* ===== 研究所について ===== */
@@ -361,7 +386,14 @@ br.sp { display: none; }
   font-family: var(--font-en); font-size: .64rem; letter-spacing: .24em; line-height: 1.9;
   text-align: right; color: var(--text-2); text-shadow: 0 1px 6px #000;
 }
-.copyright { position: relative; margin: clamp(28px, 4vw, 40px) 0 0; font-family: var(--font-en); font-size: .7rem; letter-spacing: .16em; color: var(--text-2); text-shadow: 0 1px 6px #000; }
+.footer-links {
+  position: relative; list-style: none; margin: clamp(28px, 4vw, 40px) 0 0; padding: 0;
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 6px 26px;
+  font-size: .78rem; letter-spacing: .08em; text-shadow: 0 1px 6px #000;
+}
+.footer-links a { color: var(--text-2); text-decoration: none; display: inline-block; padding: 8px 2px; }
+.footer-links a:hover, .footer-links a:focus-visible { color: var(--text); text-decoration: underline; text-underline-offset: 4px; }
+.copyright { position: relative; margin: 6px 0 0; font-family: var(--font-en); font-size: .7rem; letter-spacing: .16em; color: var(--text-2); text-shadow: 0 1px 6px #000; }
 @media (max-width: 900px) {
   .footer-words { position: static; text-align: center; margin-top: 18px; }
   .dash { width: 24px; }
@@ -377,3 +409,51 @@ br.sp { display: none; }
 }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+/* ===== 文書ページ（利用規約・著作権・データ出典） ===== */
+.doc {
+  max-width: 860px; margin: 0 auto;
+  padding: clamp(28px, 5vw, 56px) var(--gutter) 24px;
+}
+.doc h1 { margin: 0; font-size: clamp(1.5rem, 3.4vw, 2rem); font-weight: 500; letter-spacing: .12em; }
+.doc .doc-en { margin: 4px 0 0; font-family: var(--font-en); font-size: .78rem; letter-spacing: .24em; color: var(--accent); }
+.doc .doc-date { margin: 14px 0 0; font-size: .8rem; color: var(--text-3); }
+.doc h2 {
+  margin: 40px 0 10px; padding-bottom: 8px;
+  font-size: 1.12rem; font-weight: 500; letter-spacing: .08em;
+  border-bottom: 1px solid var(--line);
+}
+.doc h3 { margin: 24px 0 6px; font-size: .98rem; font-weight: 500; }
+.doc p, .doc li { font-size: .92rem; line-height: 1.95; color: var(--text-2); }
+.doc ul, .doc ol { padding-left: 1.4em; }
+.doc a { color: var(--accent); text-underline-offset: 3px; word-break: break-all; }
+.doc .note {
+  margin: 18px 0; padding: 14px 16px; border-radius: 10px;
+  background: rgba(94, 224, 240, .06); border: 1px solid rgba(94, 224, 240, .2);
+}
+.doc .note p { margin: 0; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 10px 0 0; }
+.doc table { width: 100%; border-collapse: collapse; font-size: .84rem; min-width: 560px; }
+.doc th, .doc td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; line-height: 1.7; color: var(--text-2); }
+.doc th { color: var(--text); font-weight: 500; background: rgba(12, 22, 42, .6); white-space: nowrap; }
+.back-link { display: inline-block; margin-top: 40px; color: var(--text-2); text-decoration: none; font-size: .86rem; padding: 8px 0; }
+.back-link:hover { color: var(--text); }
+.site-footer.is-simple { padding-top: 24px; background: none; }
+.site-footer.is-simple::before { content: none; }
+.licenses { margin-top: 14px; display: grid; gap: 8px; }
+.lic { border: 1px solid var(--line); border-radius: 10px; background: rgba(12, 22, 42, .55); }
+.lic summary { cursor: pointer; padding: 10px 14px; font-size: .86rem; color: var(--text); }
+.lic pre {
+  margin: 0; padding: 0 14px 14px; white-space: pre-wrap; overflow-wrap: anywhere;
+  font-family: ui-monospace, Consolas, monospace; font-size: .72rem; line-height: 1.6; color: var(--text-2);
+}
+@media (max-width: 600px) {
+  /* 表は1行ずつのカードにする（横スクロールさせない） */
+  .doc table { min-width: 0; }
+  .doc thead { display: none; }
+  .doc table, .doc tbody, .doc tr, .doc td { display: block; width: 100%; }
+  .doc tr { padding: 10px 2px; border-bottom: 1px solid var(--line); }
+  .doc td { padding: 2px 0; border: 0; }
+  .doc td:first-child { color: var(--text); font-weight: 500; }
+  .doc td:nth-child(3)::before { content: "ライセンス："; color: var(--text-3); }
+}

@@ -75,6 +75,7 @@
   const links = [...document.querySelectorAll('.site-nav a[data-nav]')];
   const sections = [...document.querySelectorAll('[data-section]')];
   function updateNav() {
+    if (!sections.length) return; // 利用規約などのページ
     const y = window.scrollY + window.innerHeight * 0.35;
     let current = 'top';
     for (const s of sections) if (s.offsetTop <= y) current = s.dataset.section;
