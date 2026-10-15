@@ -101,6 +101,21 @@
     </div>
   </section>
 
+  <!-- ===== アップデート情報（中身は data/updates.json・js/updates.js） ===== -->
+  <section class="updates reveal" id="updates" aria-labelledby="updates-title">
+    <div class="section-head">
+      <h2 id="updates-title"><span aria-hidden="true">🆕</span> アップデート情報</h2>
+      <span class="section-line" aria-hidden="true"></span>
+      <span class="section-en" lang="en">UPDATES</span>
+    </div>
+    <div class="upd-upcoming" id="upd-upcoming" hidden></div>
+    <ol class="upd-list" id="upd-list" aria-label="公開済みの更新">
+      <li class="upd-msg">読み込み中…</li>
+    </ol>
+    <ol class="upd-list upd-past" id="upd-past" aria-label="過去の更新" hidden></ol>
+    <button class="upd-more" id="upd-more" type="button" aria-expanded="false" aria-controls="upd-past" hidden>過去の更新を見る</button>
+  </section>
+
   <!-- ===== 今後のプロジェクト ===== -->
   <section class="future reveal" aria-labelledby="future-title">
     <div class="section-head">
@@ -163,5 +178,6 @@
 </footer>
 
 <script src="js/main.js" defer></script>
+<script src="js/updates.js" defer></script>
 </body>
 </html>
