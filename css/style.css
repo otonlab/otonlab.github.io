@@ -290,6 +290,19 @@ br.sp { display: none; }
 }
 
 /* ===== アップデート情報 ===== */
+/* ===== 中受伴走アプリ（バナー画像は文字入りの完成品＝縦横比を保って全体を見せる） ===== */
+.app-project { max-width: var(--maxw); margin: clamp(36px, 5vw, 48px) auto 0; padding: 0 var(--gutter); }
+.app-banner {
+  display: block; overflow: hidden;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.app-banner img { display: block; width: 100%; height: auto; }
+.app-banner:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0, 0, 0, .45), var(--glow); }
+.app-banner:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.app-body { margin: 16px 0 0; font-size: clamp(.86rem, 1.25vw, .98rem); line-height: 2; color: var(--text-2); }
+@media (prefers-reduced-motion: reduce) { .app-banner { transition: none; } .app-banner:hover { transform: none; } }
+
 .updates { max-width: var(--maxw); margin: clamp(36px, 5vw, 48px) auto 0; padding: 0 var(--gutter); }
 .upd-label { margin: 0 0 8px; font-size: .78rem; letter-spacing: .1em; color: var(--text-3); }
 .upd-upcoming { margin-bottom: 18px; }
