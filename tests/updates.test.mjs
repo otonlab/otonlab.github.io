@@ -45,3 +45,8 @@ test('renderBody：太字・箇条書き・段落、HTML は無害化', () => {
   assert.equal(renderBody('a **b**\n\n● x\n● y'), '<p>a <b>b</b></p><ul><li>x</li><li>y</li></ul>');
   assert.equal(renderBody('<script>'), '<p>&lt;script&gt;</p>');
 });
+
+test('renderBody：[文字](https://…) はリンク・https 以外はリンクにしない', () => {
+  assert.equal(renderBody('[開く](https://otonlab.github.io/chuju-bansou/)'), '<p><a href="https://otonlab.github.io/chuju-bansou/">開く</a></p>');
+  assert.equal(renderBody('[x](javascript:alert(1))'), '<p>[x](javascript:alert(1))</p>');
+});

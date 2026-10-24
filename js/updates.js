@@ -1,5 +1,5 @@
 // OTON LAB アップデート情報：data/updates.json を読んで表示する
-// 本文の書き方はオトン学園の data/updates.json と同じ（**太字**・行頭 ● / ・ は箇条書き・空行で段落）
+// 本文の書き方はオトン学園の data/updates.json と同じ（**太字**・行頭 ● / ・ は箇条書き・空行で段落）＋ [文字](https://…) でリンク
 (function (root) {
   const LATEST = 5; // 最初に見せる公開済みの件数
 
@@ -7,7 +7,9 @@
     return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   }
   function inline(s) {
-    return esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+    return esc(s)
+      .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+      .replace(/\[([^\]]+)\]\((https:\/\/[^\s()<>"]+)\)/g, '<a href="$2">$1</a>');   // [文字](https://…) はリンク（https だけ）
   }
 
   /** 本文 → HTML（段落と箇条書き） */
