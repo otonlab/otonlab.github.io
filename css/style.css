@@ -301,6 +301,7 @@ br.sp { display: none; }
 .app-banner:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0, 0, 0, .45), var(--glow); }
 .app-banner:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .app-body { margin: 16px 0 0; font-size: clamp(.86rem, 1.25vw, .98rem); line-height: 2; color: var(--text-2); }
+.app-note { margin: 8px 0 0; font-size: .82rem; line-height: 1.8; color: var(--text-3); }
 @media (prefers-reduced-motion: reduce) { .app-banner { transition: none; } .app-banner:hover { transform: none; } }
 
 .updates { max-width: var(--maxw); margin: clamp(36px, 5vw, 48px) auto 0; padding: 0 var(--gutter); }
