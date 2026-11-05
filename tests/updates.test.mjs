@@ -5,7 +5,7 @@ import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
-const { renderBody, splitItems, LATEST } = require('../js/updates.js');
+const { renderBody, splitItems, hasLang, LATEST } = require('../js/updates.js');
 const data = JSON.parse(readFileSync(new URL('../data/updates.json', import.meta.url), 'utf8'));
 
 test('各項目に必要な欄がそろっている', () => {
@@ -49,4 +49,29 @@ test('renderBody：太字・箇条書き・段落、HTML は無害化', () => {
 test('renderBody：[文字](https://…) はリンク・https 以外はリンクにしない', () => {
   assert.equal(renderBody('[開く](https://otonlab.github.io/chuju-bansou/)'), '<p><a href="https://otonlab.github.io/chuju-bansou/">開く</a></p>');
   assert.equal(renderBody('[x](javascript:alert(1))'), '<p>[x](javascript:alert(1))</p>');
+});
+
+// ---- 英語のページ（/en/） ----
+// ひらがな・カタカナ・漢字・全角の記号（● ⚙ – は使ってよい）
+const JA = /[\u3000-\u303f\u3040-\u30ff\u4e00-\u9fff\uff00-\uffef]/;
+
+test('英語の欄：title_en と body_en はそろって入る・SOLARIS の記事だけ・日本語の文字が無い', () => {
+  for (const x of data.items) {
+    assert.equal(!!x.title_en, !!x.body_en, `${x.id}: title_en と body_en の片方だけ`);
+    if (!x.title_en) continue;
+    assert.equal(x.app, 'solaris', `${x.id}: SOLARIS 以外の記事に英語がある`);
+    assert.doesNotMatch(x.title_en, JA, `${x.id}: title_en に日本語`);
+    assert.doesNotMatch(x.body_en, JA, `${x.id}: body_en に日本語`);
+  }
+});
+
+test('splitItems(data, "en")：英語のある記事だけ・日本語は今までどおり全部', () => {
+  const en = splitItems(data, 'en');
+  const all = [...en.upcoming, ...en.latest, ...en.past];
+  assert.ok(all.length > 0);
+  assert.ok(all.every(x => x.title_en && x.body_en));
+  assert.equal(all.length, data.items.filter(x => hasLang(x, 'en')).length);
+  assert.ok(!all.some(x => x.app === 'chuju-bansou' || x.app === 'oton-lab'));
+  const ja = splitItems(data);
+  assert.equal(ja.upcoming.length + ja.latest.length + ja.past.length, data.items.length);
 });

@@ -96,7 +96,8 @@
       const open = more.getAttribute('aria-expanded') === 'true';
       more.setAttribute('aria-expanded', String(!open));
       panel.hidden = open;
-      more.textContent = open ? '詳しく見る' : '閉じる';
+      const en = document.documentElement.lang === 'en';
+      more.textContent = open ? (en ? 'Learn more' : '詳しく見る') : (en ? 'Close' : '閉じる');
     });
   }
 })();

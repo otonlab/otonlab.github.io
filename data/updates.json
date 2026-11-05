@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "note": "OTON LAB のアップデート情報。新しいものを items の先頭に足す。status は released（公開済み）か upcoming（準備中）。upcoming は公開日が決まるまで date を null にする（架空の日付を入れない）。body は オトン学園の data/updates.json と同じ書き方（**太字**・行頭 ● は箇条書き・空行で段落）。",
+  "note": "OTON LAB のアップデート情報。新しいものを items の先頭に足す。status は released（公開済み）か upcoming（準備中）。upcoming は公開日が決まるまで date を null にする（架空の日付を入れない）。body は オトン学園の data/updates.json と同じ書き方（**太字**・行頭 ● は箇条書き・空行で段落）。 英語のページ（/en/）には title_en と body_en がある記事だけを出す（SOLARIS の記事だけ英語を書く）。",
   "apps": {
     "oton-lab": {
       "name": "OTON LAB",
@@ -30,7 +30,9 @@
       "status": "released",
       "date": "2026-11-04",
       "title": "恒星が6つ増え、夜空が8Kに・昼の空も見られるようになりました",
-      "body": "● **代表的な恒星を追加**：αケンタウリ A・B（太陽にいちばん近い連星）、アルタイル・ベガ（速い自転でつぶれた形）、アンタレス（遠くまで流れるちり）、ミラ（脈動と、宇宙を進む尾・弓状の衝撃波）、北極星（連星とセファイドの脈動）、TRAPPIST-1（7つの惑星と、惑星が前を通るときの明るさの変化）。\n● **夜空の背景を8Kに**：NASA の全天の星空（Deep Star Maps 2020）の 8K 版を追加ダウンロードできます（約6.2MB）。4K／8K と恒星の数（標準／99万星）の切りかえは ⚙ 設定の中にあります。\n● **天体観測**：昼は青空と太陽・昼の月、夜は月明かりで空が明るくなります。マジックタイムは実際の日の出・日の入りの時刻に合わせました。日時はドラムを指で回して選べます。\n● **時間の［⏩ 10倍］**を追加しました。\n● **ダウンロード**：［すべてダウンロード］で、まだ入っていない追加データをまとめて入れられます。"
+      "body": "● **代表的な恒星を追加**：αケンタウリ A・B（太陽にいちばん近い連星）、アルタイル・ベガ（速い自転でつぶれた形）、アンタレス（遠くまで流れるちり）、ミラ（脈動と、宇宙を進む尾・弓状の衝撃波）、北極星（連星とセファイドの脈動）、TRAPPIST-1（7つの惑星と、惑星が前を通るときの明るさの変化）。\n● **夜空の背景を8Kに**：NASA の全天の星空（Deep Star Maps 2020）の 8K 版を追加ダウンロードできます（約6.2MB）。4K／8K と恒星の数（標準／99万星）の切りかえは ⚙ 設定の中にあります。\n● **天体観測**：昼は青空と太陽・昼の月、夜は月明かりで空が明るくなります。マジックタイムは実際の日の出・日の入りの時刻に合わせました。日時はドラムを指で回して選べます。\n● **時間の［⏩ 10倍］**を追加しました。\n● **ダウンロード**：［すべてダウンロード］で、まだ入っていない追加データをまとめて入れられます。",
+      "title_en": "6 more stars, an 8K night sky, and the daytime sky",
+      "body_en": "● **New featured stars**: Alpha Centauri A and B (the pair of stars closest to the Sun), Altair and Vega (they spin so fast that they are squashed), Antares (dust that flows far out), Mira (it swells and shrinks, and has a long tail and a bow shock as it moves through space), Polaris (a double star that pulses), and TRAPPIST-1 (7 planets, and how the star dims when a planet passes in front of it).\n● **An 8K night sky**: You can download NASA's 8K all-sky star map (Deep Star Maps 2020, about 6.2 MB). You can switch between 4K and 8K, and choose how many stars to show (normal or 990,000 stars), in ⚙ Settings.\n● **Stargazing**: In the daytime you see a blue sky with the Sun and the daytime Moon. At night, moonlight makes the sky brighter. The colorful twilight now matches the real times of sunrise and sunset. You can pick the date and time by spinning a dial with your finger.\n● Time can now go **10 times faster**.\n● **Downloads**: One button now downloads all the extra data you don't have yet."
     },
     {
       "id": "solaris-2026-11-03",
@@ -38,7 +40,9 @@
       "status": "released",
       "date": "2026-11-03",
       "title": "恒星へのワープ・天体検索・準惑星が入りました",
-      "body": "● **恒星間旅行**：シリウス・プロキシマ・ケンタウリ・ベテルギウス・ウォルフ359 へ飛んで、近くで見られます。［太陽系へ戻る］で帰れます。\n● **恒星を近くで見る**：太陽を含む5つの恒星で、時間の早送りや観測モードを同じパネルで操作できます。観測にもとづく部分と、計算や推定による部分は、画面で区別しています。\n● **太陽**：活動領域・フレア・プロミネンス・CME がつながって動く「太陽の活動」、コロナレインやスピキュールを近くで見る「現象をくわしく見る」、3D の計算（Cheung ほか 2019）をもとにした「フレア観察」（追加ダウンロード 約12MB）。\n● **シリウス**：A と B の連星の軌道と、2つの星への接近。\n● **プロキシマ・ケンタウリ／ウォルフ359**：星の黒点（星斑）とフレア。TESS 衛星が観測したフレアの再現もあります。\n● **ベテルギウス**：表面の温度の地図、約416日の脈動、太陽系との大きさ比べ、2019〜2020年の大減光、ちりの放出、弓状の衝撃波。\n● **天体検索**：約860の天体を名前で探して、そこへ移動したり、観測画像を見たりできます。\n● **準惑星**：ケレス・冥王星・ハウメア・マケマケ・エリスと、カイパーベルトの天体（約8,200）が入りました。"
+      "body": "● **恒星間旅行**：シリウス・プロキシマ・ケンタウリ・ベテルギウス・ウォルフ359 へ飛んで、近くで見られます。［太陽系へ戻る］で帰れます。\n● **恒星を近くで見る**：太陽を含む5つの恒星で、時間の早送りや観測モードを同じパネルで操作できます。観測にもとづく部分と、計算や推定による部分は、画面で区別しています。\n● **太陽**：活動領域・フレア・プロミネンス・CME がつながって動く「太陽の活動」、コロナレインやスピキュールを近くで見る「現象をくわしく見る」、3D の計算（Cheung ほか 2019）をもとにした「フレア観察」（追加ダウンロード 約12MB）。\n● **シリウス**：A と B の連星の軌道と、2つの星への接近。\n● **プロキシマ・ケンタウリ／ウォルフ359**：星の黒点（星斑）とフレア。TESS 衛星が観測したフレアの再現もあります。\n● **ベテルギウス**：表面の温度の地図、約416日の脈動、太陽系との大きさ比べ、2019〜2020年の大減光、ちりの放出、弓状の衝撃波。\n● **天体検索**：約860の天体を名前で探して、そこへ移動したり、観測画像を見たりできます。\n● **準惑星**：ケレス・冥王星・ハウメア・マケマケ・エリスと、カイパーベルトの天体（約8,200）が入りました。",
+      "title_en": "Travel to the stars, search for objects, and dwarf planets",
+      "body_en": "● **Travel to the stars**: Fly to Sirius, Proxima Centauri, Betelgeuse and Wolf 359 and see them up close. A button takes you back to the Solar System.\n● **See stars up close**: For 5 stars, including the Sun, you can speed up time and use the viewing modes from the same panel. The screen shows which parts come from observations and which are calculated or estimated.\n● **The Sun**: Watch active regions, flares, prominences and CMEs (big bursts of gas) work together. Look closely at coronal rain and spicules. Watch a flare in 3D, made from a computer simulation (Cheung et al. 2019; extra download, about 12 MB).\n● **Sirius**: The orbit of the two stars, Sirius A and B, and a trip close to each of them.\n● **Proxima Centauri and Wolf 359**: Starspots and flares. You can also see a flare that the TESS satellite observed.\n● **Betelgeuse**: A map of its surface temperature, how it swells and shrinks every 416 days or so, how big it is next to the Solar System, the Great Dimming of 2019–2020, dust being blown out, and its bow shock.\n● **Search**: Search about 860 objects by name, then fly there or look at space pictures of them.\n● **Dwarf planets**: Ceres, Pluto, Haumea, Makemake and Eris, plus about 8,200 objects in the Kuiper Belt."
     },
     {
       "id": "chuju-bansou-2026-10-24",
@@ -54,7 +58,9 @@
       "status": "released",
       "date": "2026-10-19",
       "title": "キッズモードと、約99万星の高密度表示が入りました",
-      "body": "● **キッズモード**：⚙ の表示モードで「キッズ」を選ぶと、子ども向けのかんたんな画面で宇宙を探検できます。\n● キッズでできること：地球から海王星まで宇宙の広さを感じる旅／木星・土星・火星の探検／宇宙の時間と「どれくらい遠い？」（新幹線・飛行機・光でくらべる）／宇宙探検の歴史（アポロ11号と月面・スペースシャトルの船内・ボイジャー・ISS のキューポラときぼう）\n● **「うちゅうは どこまで ひろい？」**：地球から観測できる宇宙の果てまで、案内役の声つきで旅します（約3分40秒）。\n● **高密度の恒星**：天の川銀河の星を、約99万星で表示できるようになりました（追加ダウンロード 約12.6MB）。距離の確かさで色分けもできます。\n\n同じ日に、高密度の表示がダウンロードの直後に切りかわらないことがある不具合も直しました。"
+      "body": "● **キッズモード**：⚙ の表示モードで「キッズ」を選ぶと、子ども向けのかんたんな画面で宇宙を探検できます。\n● キッズでできること：地球から海王星まで宇宙の広さを感じる旅／木星・土星・火星の探検／宇宙の時間と「どれくらい遠い？」（新幹線・飛行機・光でくらべる）／宇宙探検の歴史（アポロ11号と月面・スペースシャトルの船内・ボイジャー・ISS のキューポラときぼう）\n● **「うちゅうは どこまで ひろい？」**：地球から観測できる宇宙の果てまで、案内役の声つきで旅します（約3分40秒）。\n● **高密度の恒星**：天の川銀河の星を、約99万星で表示できるようになりました（追加ダウンロード 約12.6MB）。距離の確かさで色分けもできます。\n\n同じ日に、高密度の表示がダウンロードの直後に切りかわらないことがある不具合も直しました。",
+      "title_en": "Kids mode, and about 990,000 stars",
+      "body_en": "● **Kids mode**: Choose \"Kids\" in the display modes under ⚙ to explore space with a simple screen made for children.\n● What you can do in Kids mode: a trip from Earth to Neptune to feel how big space is; exploring Jupiter, Saturn and Mars; the time scale of the universe and \"How far is it?\" (compared with a bullet train, a plane and light); and the history of space exploration (Apollo 11 on the Moon, inside the Space Shuttle, Voyager, and the ISS's Cupola and Kibo).\n● **\"How big is space?\"**: A trip with a guide's voice, from Earth to the edge of the universe we can see (about 3 minutes 40 seconds).\n● **Lots of stars**: You can now show the stars of the Milky Way with about 990,000 stars (extra download, about 12.6 MB). You can also color the stars by how sure we are of their distance.\n\nOn the same day, we also fixed a problem where the many-star view sometimes did not switch on right after downloading."
     },
     {
       "id": "solaris-2026-10-17",
@@ -62,7 +68,9 @@
       "status": "released",
       "date": "2026-10-17",
       "title": "彗星・恒星間天体と「もしも宇宙船だったら？」が入りました",
-      "body": "● **彗星・恒星間天体**：ハレー彗星・67P（チュリュモフ・ゲラシメンコ彗星）・ヘール・ボップ彗星と、太陽系の外から来た 1I（オウムアムア）・2I（ボリソフ彗星）・3I（アトラス彗星）の軌道と、核や尾を見られます。3I は観測のようすを再現しています。\n● **もしも宇宙船だったら？**：1I と 3I を、架空の SF 宇宙船（「黒曜の双刃」「三重環の天体儀」）として見られます。科学の表示と切り替えられます。宇宙船のデータは、見るときに追加でダウンロードします。"
+      "body": "● **彗星・恒星間天体**：ハレー彗星・67P（チュリュモフ・ゲラシメンコ彗星）・ヘール・ボップ彗星と、太陽系の外から来た 1I（オウムアムア）・2I（ボリソフ彗星）・3I（アトラス彗星）の軌道と、核や尾を見られます。3I は観測のようすを再現しています。\n● **もしも宇宙船だったら？**：1I と 3I を、架空の SF 宇宙船（「黒曜の双刃」「三重環の天体儀」）として見られます。科学の表示と切り替えられます。宇宙船のデータは、見るときに追加でダウンロードします。",
+      "title_en": "Comets, interstellar objects, and \"What if it were a spaceship?\"",
+      "body_en": "● **Comets and interstellar objects**: See the orbits, nuclei and tails of Halley's Comet, 67P (Comet Churyumov–Gerasimenko) and Comet Hale-Bopp, and of 1I ('Oumuamua), 2I (Comet Borisov) and 3I (Comet ATLAS), which came from outside the Solar System. For 3I, you can see a recreation of how it was observed.\n● **What if it were a spaceship?**: See 1I and 3I as made-up science fiction spaceships (\"Obsidian Twin Blades\" and \"Triple-Ring Orrery\"). You can switch back to the science view. The spaceship data is downloaded when you look at it."
     },
     {
       "id": "solaris-big-2026-10",
@@ -70,7 +78,9 @@
       "status": "released",
       "date": "2026-10-16",
       "title": "大型アップデート：アポロの旅・ボイジャー・宇宙の旅",
-      "body": "SOLARIS に大きな機能がまとめて入りました。\n\n● **アポロの旅**：アポロ11〜17号の打ち上げから着水までの全行程を体験できます。13号は、月に降りずに戻った緊急帰還の旅です。宇宙服や月面車も、NASA が公開している写真と資料から作り直しました。\n● **ボイジャー1号・2号の旅**：1977年の打ち上げから、惑星のそばを通るスイングバイ、「今どこ？」までたどれます。機体の部位を調べたり、ゴールデンレコードを鑑賞したりもできます（追加ダウンロード）。\n● **宇宙開発の歴史**：年表から、それぞれの体験へ進めます。\n● **銀河と宇宙の大規模構造**：天の川銀河・局所銀河群・銀河の分布から、宇宙の大規模構造まで見られます。\n● **7分間の宇宙の旅**：音楽とナレーションつきの旅です。\n● **音の設定**：BGM・効果音・ナレーションを、それぞれ ON/OFF と音量で調整できます。スペースシャトル STS-1 にも効果音がつきました。\n● メニューを宇宙船・探査機・人工衛星に分けて見やすくしました。\n● 軌道線の表示を、惑星・衛星・人工物ごとに切り替えられます。"
+      "body": "SOLARIS に大きな機能がまとめて入りました。\n\n● **アポロの旅**：アポロ11〜17号の打ち上げから着水までの全行程を体験できます。13号は、月に降りずに戻った緊急帰還の旅です。宇宙服や月面車も、NASA が公開している写真と資料から作り直しました。\n● **ボイジャー1号・2号の旅**：1977年の打ち上げから、惑星のそばを通るスイングバイ、「今どこ？」までたどれます。機体の部位を調べたり、ゴールデンレコードを鑑賞したりもできます（追加ダウンロード）。\n● **宇宙開発の歴史**：年表から、それぞれの体験へ進めます。\n● **銀河と宇宙の大規模構造**：天の川銀河・局所銀河群・銀河の分布から、宇宙の大規模構造まで見られます。\n● **7分間の宇宙の旅**：音楽とナレーションつきの旅です。\n● **音の設定**：BGM・効果音・ナレーションを、それぞれ ON/OFF と音量で調整できます。スペースシャトル STS-1 にも効果音がつきました。\n● メニューを宇宙船・探査機・人工衛星に分けて見やすくしました。\n● 軌道線の表示を、惑星・衛星・人工物ごとに切り替えられます。",
+      "title_en": "Big update: Apollo journeys, Voyager, and a space tour",
+      "body_en": "Lots of big new features came to SOLARIS at once.\n\n● **Apollo journeys**: Follow Apollo 11 to 17 all the way from launch to splashdown. Apollo 13 is the emergency trip home that never landed on the Moon. We also rebuilt the spacesuits and the Moon buggy from photos and documents NASA has made public.\n● **Voyager 1 and 2**: Follow them from their launch in 1977, past the planets they swung by, to \"Where are they now?\". You can look at the parts of the spacecraft and listen to the Golden Record (extra download).\n● **History of space exploration**: Start each journey from the timeline.\n● **Galaxies and the large-scale structure of the universe**: From the Milky Way to the Local Group, where galaxies are, and the biggest structures in the universe.\n● **A 7-minute space tour**: A trip with music and narration.\n● **Sound settings**: Turn the music, sound effects and narration on or off, and set the volume of each. The Space Shuttle STS-1 now has sound effects too.\n● The menu is now split into spaceships, space probes and satellites, so it is easier to use.\n● You can show or hide orbit lines for planets, moons and spacecraft separately."
     },
     {
       "id": "solaris-v735",
@@ -79,6 +89,8 @@
       "date": "2026-10-15",
       "title": "スペースシャトル STS-1 が入りました",
       "body": "**［人工天体］** に **スペースシャトル** が入りました。1981年に初めて宇宙へ行った **コロンビア号**（STS-1）です。\n\n● **打ち上げ** から地球をまわる軌道まで、**帰還と着陸**、**船内**（8か所）を見られます。\n● SOLARIS の公開先が OTON LAB（otonlab.github.io/solaris/）になりました。",
+      "title_en": "The Space Shuttle STS-1 is here",
+      "body_en": "The **Space Shuttle** has been added. It is **Columbia** (STS-1), which went to space for the first time in 1981.\n\n● See its **launch**, its orbit around Earth, its **return and landing**, and **inside the shuttle** (8 places).\n● SOLARIS now lives at OTON LAB (otonlab.github.io/solaris/).",
       "source": {
         "otonGakuen": "v735"
       }
@@ -98,6 +110,8 @@
       "date": "2026-10-13",
       "title": "アルテミスと着陸船の中が入りました",
       "body": "月のカードの **［月面を探検］** で、**アポロ** と **アルテミス** の2つから選べるようになりました。\n\n● **アルテミス**：これから人が行く月の **南極**。本物の地形の上に基地を作りました。宇宙飛行士の目の高さで歩いて、**居住モジュールの中** にも入れます。\n● **アポロ**：6つの着陸地点すべてで、**着陸船の中** に入れます。計器盤や窓をタッチすると、何をするものか分かります。\n● **［アルテミス2号］** で、オリオン宇宙船に乗って月をまわる旅を体験できます。\n● **［月の地名］** で、海やクレーターの名前と、アポロが降りた場所を見られます。",
+      "title_en": "Artemis, and inside the lunar landers",
+      "body_en": "On the Moon's card, you can now choose between **Apollo** and **Artemis** when you explore the Moon's surface.\n\n● **Artemis**: The Moon's **south pole**, where people will go next. We built a base on the real shape of the land. Walk around at an astronaut's eye level, and go **inside the living module**.\n● **Apollo**: At all 6 landing sites, you can go **inside the lunar lander**. Touch the control panels and windows to find out what they are for.\n● **Artemis II**: Ride the Orion spacecraft on a trip around the Moon.\n● **Moon place names**: See the names of seas and craters, and where Apollo landed.",
       "source": {
         "otonGakuen": "v734"
       }
@@ -109,6 +123,8 @@
       "date": "2026-10-11",
       "title": "追加データのダウンロードをかんたんにしました",
       "body": "追加データのダウンロードを、**機能ごとに1回の確認** にまとめました。\n\n● アポロ月面探検・地球の地表と地形・天体観測図鑑・観測画像は、それぞれ1回の操作で全部入ります。\n● 確認画面には、**まだ入っていない分の大きさ** だけを出すようにしました。\n● すでに入れたデータは、そのまま使えます。",
+      "title_en": "Easier downloads for extra data",
+      "body_en": "Downloading extra data now needs **just one OK for each feature**.\n\n● Apollo Moon exploration, Earth's land and terrain, the stargazing picture book, and the space pictures each download everything in one step.\n● The download screen now shows **only the size of what you don't have yet**.\n● Data you already downloaded still works.",
       "source": {
         "otonGakuen": "v733"
       }
@@ -120,6 +136,8 @@
       "date": "2026-10-11",
       "title": "アポロ月面探検が入りました",
       "body": "月のカードの **［月面を探検］** から、人が月を歩いた **6つの場所**（アポロ11・12・14・15・16・17号）へ行けます。\n\n● 着陸船は、NASA が公開している写真と図面に合わせて1機ずつ作りました。15号からは月面車もあります。\n● まわりの地形は、月を回る探査機が測った **本物の形** です。空の太陽と地球の向きも、その日のとおりです。\n● **［歩く］** で月面を歩けます。\n● **探検ミッション** と、星雲・銀河など150枚の **天体観測図鑑** も入りました。",
+      "title_en": "Explore the Apollo landing sites on the Moon",
+      "body_en": "From the Moon's card, you can go to the **6 places** where people walked on the Moon (Apollo 11, 12, 14, 15, 16 and 17).\n\n● We built each lunar lander one by one to match photos and drawings NASA has made public. From Apollo 15 on, there is also a Moon buggy.\n● The land around them is the **real shape**, measured by spacecraft circling the Moon. The Sun and Earth in the sky are where they really were on that day.\n● You can **walk** on the Moon's surface.\n● We also added **exploration missions** and a **stargazing picture book** with 150 pictures of nebulae, galaxies and more.",
       "source": {
         "otonGakuen": "v732"
       }
@@ -131,6 +149,8 @@
       "date": "2026-10-08",
       "title": "主要な人工衛星と「軌道を比べる」を追加しました",
       "body": "人工衛星の仕事と軌道の違いを学べるようになりました。\n\n● ハッブル宇宙望遠鏡・ひまわり9号・GPS 衛星・だいち4号・TDRS\n● **［軌道を比べる］** で、LEO・MEO・GEO の高さの違いを地球のまわりで見比べられます。",
+      "title_en": "Main satellites, and comparing orbits",
+      "body_en": "Now you can learn what satellites do and how their orbits are different.\n\n● The Hubble Space Telescope, Himawari-9, GPS satellites, ALOS-4 (Daichi-4) and TDRS\n● **Compare orbits**: See how high LEO, MEO and GEO are, side by side around Earth.",
       "source": {
         "otonGakuen": "v731"
       }
@@ -142,6 +162,8 @@
       "date": "2026-10-07",
       "title": "国際宇宙ステーション（ISS）が入りました",
       "body": "地球のカードの **［ISSを見る］** から入れます。\n\n● いま ISS が地球のどこの上を飛んでいるかを、**本物の軌道データ** で見られます。\n● 近づくと、太陽電池パドル・日本の実験棟「きぼう」・キューポラなど、**部位の名前と役割** が分かります。\n● キューポラやきぼうの中にも入れます。\n● 地球の雲が、**気象衛星の最新の観測**（1時間ごと）になりました。",
+      "title_en": "The International Space Station (ISS) is here",
+      "body_en": "Open it from Earth's card.\n\n● See where on Earth the ISS is flying right now, using **real orbit data**.\n● Get closer to learn the **names and jobs of its parts**, such as the solar arrays, Japan's Kibo lab and the Cupola.\n● You can go inside the Cupola and Kibo.\n● Earth's clouds now come from **the latest weather satellite pictures** (every hour).",
       "source": {
         "otonGakuen": "v730"
       }
@@ -153,6 +175,8 @@
       "date": "2026-10-06",
       "title": "宇宙シミュレーター SOLARIS を公開しました",
       "body": "太陽・惑星・月・衛星を、**本物の暦どおりの動き** で見られる3Dシミュレーターです。\n\n● 日時を進めたり戻したりできます。\n● 地球では日本まで飛んでいけます。国境・海・都道府県の名前も出せます。\n● 天体観測・月の学習・日食や月食もあります。",
+      "title_en": "We released SOLARIS, a space simulator",
+      "body_en": "A 3D simulator where the Sun, planets, Moon and moons **move just like the real calendar**.\n\n● Move the date and time forward or back.\n● Fly down to Earth and all the way to Japan. You can also show country borders, seas and the names of Japan's prefectures.\n● Stargazing, learning about the Moon, and solar and lunar eclipses are included too.",
       "source": {
         "otonGakuen": "v729"
       }
