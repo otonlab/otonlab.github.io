@@ -22,7 +22,9 @@
       "status": "released",
       "date": "2026-11-05",
       "title": "ブラックホールへ行けるように・英語に対応しました",
-      "body": "● **ブラックホール**：［🪐 惑星］→［ブラックホール］から、5 つのブラックホールへワープできます。私たちの天の川銀河の中心にある「いて座A*」、初めて撮影された M87*、明るい円盤を持つはくちょう座X-1、近くの静かなブラックホール Gaia BH1・BH3 です。\n● **一般相対論で計算**：光の曲がり方、ブラックホールの影、回るガスの見え方を、このアプリが一般相対論の式で計算しています。［🌀 自転］で、ブラックホールの自転を切りかえられます。\n● **観測と推定を分けて表示**：［📋 区分］で、値ごとに観測・推定・仮定を見分けられます。\n● **オリジナルの BGM**：近づくほど楽器が増える曲です（追加ダウンロード・約 5.3 MB）。\n● **英語に対応**：⚙ 設定の［🌐 言語 / Language］で英語に切りかえられます。宇宙の旅とキッズの旅は、英語のナレーションも入れられます（追加ダウンロード）。"
+      "body": "● **ブラックホール**：［🪐 惑星］→［ブラックホール］から、5 つのブラックホールへワープできます。私たちの天の川銀河の中心にある「いて座A*」、初めて撮影された M87*、明るい円盤を持つはくちょう座X-1、近くの静かなブラックホール Gaia BH1・BH3 です。\n● **一般相対論で計算**：光の曲がり方、ブラックホールの影、回るガスの見え方を、このアプリが一般相対論の式で計算しています。［🌀 自転］で、ブラックホールの自転を切りかえられます。\n● **観測と推定を分けて表示**：［📋 区分］で、値ごとに観測・推定・仮定を見分けられます。\n● **オリジナルの BGM**：近づくほど楽器が増える曲です（追加ダウンロード・約 5.3 MB）。\n● **英語に対応**：⚙ 設定の［🌐 言語 / Language］で英語に切りかえられます。宇宙の旅とキッズの旅は、英語のナレーションも入れられます（追加ダウンロード）。",
+      "title_en": "Visit black holes, and SOLARIS is now in English",
+      "body_en": "● **Black holes**: Open Planets → Black holes to warp to 5 black holes: Sagittarius A* at the center of our Milky Way, M87* (the first black hole ever photographed), Cygnus X-1 with its bright disk, and Gaia BH1 and BH3, quiet black holes near us.\n● **Worked out with general relativity**: The app uses Einstein's equations of general relativity to work out how light bends, the black hole's shadow, and how the swirling gas looks. You can also change how fast the black hole spins.\n● **Observed or estimated?**: With 📋 Categories, you can see which values are observed, estimated or assumed.\n● **Original music**: More instruments join in as you get closer (extra download, about 5.3 MB).\n● **Now in English**: Switch to English in ⚙ Settings → 🌐 Language. The space tour and the kids tour can also have English narration (extra download)."
     },
     {
       "id": "solaris-2026-11-04",
