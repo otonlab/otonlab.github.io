@@ -17,6 +17,16 @@
   },
   "items": [
     {
+      "id": "solaris-2026-11-08",
+      "app": "solaris",
+      "status": "released",
+      "date": "2026-11-08",
+      "title": "宇宙開発の歴史を体験できるようになりました",
+      "body": "● **4 つの体験**：［🛸 宇宙探査機］や［宇宙開発の歴史］から、本物の記録をもとにした 4 つの出来事を体験できます。\n● **スプートニク 1 号（1957）**：世界初の人工衛星です。打ち上げから電波の「ピー」、92 日後に燃えつきるまで。\n● **ボストーク 1 号（1961）**：ガガーリンが人類で初めて地球を 1 周しました。逆噴射、高さ 7 km での脱出、畑への着地まで。\n● **ボスホート 2 号（1965）**：レオーノフが初めて宇宙遊泳をしました。ふくらんだ宇宙服、手動での逆噴射、雪のタイガへの着陸まで。\n● **はやぶさ（2003〜2010）**：内之浦からの打ち上げ、スイングバイ、イトカワへの 2 回の着地、行方不明、そしてウーメラへの帰還。軌道は NASA・JAXA の公開データで計算しています。",
+      "title_en": "Experience the history of space exploration",
+      "body_en": "● **4 experiences**: From Spacecraft or Space history, you can relive 4 events based on real records.\n● **Sputnik 1 (1957)**: The first artificial satellite. From launch and its famous \"beep-beep\" radio signal to burning up 92 days later.\n● **Vostok 1 (1961)**: Gagarin becomes the first human to orbit the Earth. The retrofire, the ejection at 7 km, and the landing in a field.\n● **Voskhod 2 (1965)**: Leonov makes the first spacewalk. The ballooning spacesuit, the manual retrofire, and the landing in the snowy taiga.\n● **Hayabusa (2003–2010)**: Launch from Uchinoura, the Earth swing-by, two touchdowns on the asteroid Itokawa, the time it went missing, and the return to Woomera. The trajectory is computed from public NASA and JAXA data."
+    },
+    {
       "id": "solaris-2026-11-05",
       "app": "solaris",
       "status": "released",
